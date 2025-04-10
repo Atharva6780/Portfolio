@@ -35,7 +35,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="nav-end hidden lg:flex space-x-6">
-          {["about", "skills", "projects", "contacts"].map((item) => (
+          {["about", "skills", "projects"].map((item) => (
             <button key={item} className="group relative overflow-hidden text-blue-950">
               <a href={`#${item}`} className="text-lg font-medium px-3 py-2 inline-block hover:text-blue-600 transition-colors duration-300">
                 {item.charAt(0).toUpperCase() + item.slice(1)}
