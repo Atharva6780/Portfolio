@@ -18,7 +18,6 @@ const Navbar = ({ activeSection, setActiveSection }) => {
             Atharva Shinde
           </div>
           
-          {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <button
@@ -33,7 +32,6 @@ const Navbar = ({ activeSection, setActiveSection }) => {
             ))}
           </div>
 
-          {/* Mobile Navigation Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-white"
@@ -44,7 +42,6 @@ const Navbar = ({ activeSection, setActiveSection }) => {
           </button>
         </div>
 
-        {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-black/40 backdrop-blur-md rounded-lg">

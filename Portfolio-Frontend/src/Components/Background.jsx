@@ -3,7 +3,6 @@ const SpaceBackground = () => {
   const [shootingStars, setShootingStars] = useState([]);
 
   useEffect(() => {
-    // Generate random stars
     const generateStars = () => {
       const newStars = [];
       for (let i = 0; i < 200; i++) {
@@ -19,7 +18,6 @@ const SpaceBackground = () => {
       setStars(newStars);
     };
 
-    // Generate shooting stars
     const generateShootingStars = () => {
       const newShootingStars = [];
       for (let i = 0; i < 5; i++) {
@@ -37,10 +35,8 @@ const SpaceBackground = () => {
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900"></div>
 
-      {/* Stars */}
       {stars.map((star) => (
         <div
           key={star.id}
