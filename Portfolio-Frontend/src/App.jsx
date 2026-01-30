@@ -3,7 +3,6 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import Work from './Pages/Work';
-import About from './Pages/About';
 import Contact from './Pages/Contact';
 import './styles/animations.css';
 
@@ -98,8 +97,6 @@ const App = () => {
         return <Home setActiveSection={setActiveSection} />;
       case 'work':
         return <Work />;
-      case 'about':
-        return <About />;
       case 'contact':
         return <Contact />;
       default:
